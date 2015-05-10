@@ -17,9 +17,7 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(BOARD_VENDOR),samsung)
-ifneq ($(filter serrano3gxx serranodsdd serranodsub serranoltebmc \
-                serranoltespr serranolteusc serranoltexx,$(TARGET_DEVICE)),)
-
+ifneq ($(filter serrano3gxx serranodsdd serranodsub serranoltebmc serranoltespr serranolteusc serranoltexx,$(TARGET_DEVICE)),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := samsung
